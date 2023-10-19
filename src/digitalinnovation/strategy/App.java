@@ -1,5 +1,9 @@
 package digitalinnovation.strategy;
 
+import digitalinnovation.facade.Facade;
+import digitalinnovation.subsistema.CrmService;
+import digitalinnovation.subsistema.CepApi;
+
 
 public class App {
     public static void main(String[] args) {
@@ -60,5 +64,10 @@ public class App {
 		System.out.println(" ");
 		System.out.println("Lutador 2 Vence!!");
 		System.out.println(" "); 
+
+		// Facade
+
+		Facade facade = new Facade();
+		facade.migrarCriador("Juliano	Araujo", "08664650");
     }
 }
